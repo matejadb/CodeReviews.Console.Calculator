@@ -51,6 +51,14 @@ public class Calculator
                 }
                 _writer.WriteValue("Divide");
                 break;
+            case "p":
+                result = Math.Pow(num1, num2);
+                _writer.WriteValue("Power");
+                break;
+            case "r":
+                result = Math.Sqrt(num1);
+                _writer.WriteValue("Square Root");
+                break;
             // Return text for an incorrect option entry.
             default:
                 break;
